@@ -1,15 +1,14 @@
-import React from "react"
-import {BrowserRouter} from "react-router-dom"
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
 
-import Header from "../Components/DefaultComponents/Header"
-import Routes from "../Routes/Routes"
-import SideBar from "../Components/DefaultComponents/SideBar"
+import Header from "../Components/DefaultComponents/Header";
+import Routes from "../Routes/Routes";
 
-export default function App(){
-    return(
-            <BrowserRouter> 
-                <Header/>
-                <Routes/>
-            </BrowserRouter>
-    )
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Header />
+      <Routes />
+    </BrowserRouter>
+  );
 }

@@ -1,5 +1,5 @@
-import React, { useState, useContext, useEffect } from "react";
-import { Form, Table, FormGroup, FormControl, Col, Row } from "react-bootstrap";
+import React from "react";
+import { Form, Table, FormGroup, FormControl, Col } from "react-bootstrap";
 import LogoSirtec from "../../Assets/LogoSirtec.png";
 import moment from "moment";
 import "./Styles/TermGen.css";

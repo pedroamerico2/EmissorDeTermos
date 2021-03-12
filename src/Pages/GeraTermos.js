@@ -1,15 +1,12 @@
-import React, { useState, useContext, useEffect } from "react";
-import { Dropdown, Button, Container } from "react-bootstrap";
+import React, { useState } from "react";
+import { Button, Container } from "react-bootstrap";
 import Axios from "axios";
-
-import moment from "moment";
 
 import ModalAdd from "../Components/Modals/ModalAdd";
 import ModalPreview from "../Components/Modals/ModalPreview";
 import ModalLogin from "../Components/Modals/ModalLogin";
 import "./Styles/GeraTermos.css";
 export default function GeraTermos() {
-  const ref = React.createRef();
   const [defTerm, setDefTerm] = useState("");
   const [defName, setDefName] = useState("");
   const [defReg, setDefReg] = useState("");
@@ -120,8 +117,9 @@ export default function GeraTermos() {
 
       <div className="text-center">
         <Button
-          variant="success"
-          style={{ background: "none", border: "white" }}
+          className=" btn-lg outline"
+          variant="info"
+          style={{ width: "33.333%", background: "", border: "white" }}
           onClick={() => setShowLogin(!showLogin)}
         >
           <span style={{ color: "black" }} className="material-icons">
@@ -129,8 +127,9 @@ export default function GeraTermos() {
           </span>
         </Button>
         <Button
-          variant="success"
-          style={{ background: "none", border: "white" }}
+          className=" btn-lg outline"
+          variant="primary"
+          style={{ width: "33.333%", background: "", border: "white" }}
           onClick={() => setShowAdd(!showAdd)}
         >
           <span style={{ color: "black" }} className="material-icons">
@@ -138,49 +137,15 @@ export default function GeraTermos() {
           </span>
         </Button>
         <Button
-          variant="success"
-          style={{ background: "none", border: "white" }}
+          className=" btn-lg outline"
+          variant="warning"
+          style={{ width: "33.333%", background: "", border: "white" }}
           onClick={() => setShowPreview(!showPreview)}
         >
           <span style={{ color: "black" }} className="material-icons">
             preview
           </span>
         </Button>
-
-        <Dropdown title="Geradores" variant="success" id="dropdown-basic">
-          <Dropdown.Toggle variant="success" id="dropdown-basic">
-            Termos Disponiveis
-          </Dropdown.Toggle>
-          <Dropdown.Menu>
-            <Dropdown.Item onClick={() => setDefTerm("Generico")}>
-              Geral
-            </Dropdown.Item>
-            <Dropdown.Item
-              value={defTerm}
-              onClick={() => setDefTerm("TermoCameras")}
-            >
-              Cameras
-            </Dropdown.Item>
-            <Dropdown.Item
-              value={defTerm}
-              onClick={() => setDefTerm("TermoNotebooks")}
-            >
-              Notebooks
-            </Dropdown.Item>
-            <Dropdown.Item
-              value={defTerm}
-              onClick={() => setDefTerm("TermoCelulares")}
-            >
-              Celulares
-            </Dropdown.Item>
-            <Dropdown.Item
-              value={defTerm}
-              onClick={() => setDefTerm("TermoDesktops")}
-            >
-              Desktop
-            </Dropdown.Item>
-          </Dropdown.Menu>
-        </Dropdown>
       </div>
       <Container className="content"></Container>
     </>

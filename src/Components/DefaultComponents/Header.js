@@ -1,19 +1,9 @@
-import React, { useContext } from "react";
-import {
-  Navbar,
-  Nav,
-  NavDropdown,
-  Form,
-  FormControl,
-  Button,
-} from "react-bootstrap";
+import React from "react";
+import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import Logo from "../../Assets/g18-1.png";
 import "./Styles/Header.css";
-
-import { useHistory } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -33,9 +23,6 @@ export default function Header() {
             <NavDropdown title="Geradores" id="collasible-nav-dropdown">
               <NavDropdown.Item>
                 <Link to="/geratermos">Gera Termos</Link>
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
               </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link>
