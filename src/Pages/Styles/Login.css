@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.formulario{
+    display: block;
+    width: 25%;
+    margin:  0 auto;
+}

@@ -1,0 +1,39 @@
+.ListStablishments{
+    width: 100%;
+    height: 480px;
+    overflow-y: scroll;
+}
+.titlePage{
+    background-color: #343a40;
+    color: white;
+    width: 100%;
+}
+.ConfigTable{
+    width: 85%;
+    float: right;
+}
+.ConfigTable p{
+    background-color: #58cb80;
+    color: white;
+}
+.SearchToAction{
+    width: 300px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #343a40 ;
+    border-radius: 0;
+    float: right;
+    margin-right: 1%;
+}
+.UtilitiesStablishments{
+    margin-top: 50px;
+}
+.Options{
+    background: white;
+    border: none;
+}
+.Options:hover{
+    background: #58cb80;
+    border: none;
+}
+

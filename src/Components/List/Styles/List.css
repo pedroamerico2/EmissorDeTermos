@@ -1,0 +1,46 @@
+.checkIcon{
+    color:black;
+}
+
+.iconConfigEdit{
+    color: #ffc107;
+    cursor: pointer;
+}
+
+.iconConfigEdit:hover{
+    color: #997302;
+
+}
+.iconConfigDelete{
+    color: #dc3545;
+    cursor: pointer;
+}
+.iconConfigDelete:hover{
+    color: #ff0019;
+}
+.iconConfigView{
+    color: #17a2b8;
+    cursor: pointer;
+}
+.iconConfigView:hover{
+    color: #00ddff;
+}
+.iconConfigMenu{
+    color: #343a40;
+    cursor: pointer;
+}
+.iconConfigMenu:hover{
+    color: #5b646e;
+}
+th{
+    position: sticky;
+    top: 0;
+    background: #58cb80;
+    color: white;
+}
+th tr{
+    height: 50px;
+}
+tbody tr td{
+    border-color: #58cb80 !important;
+}

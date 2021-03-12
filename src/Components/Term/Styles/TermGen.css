@@ -1,0 +1,27 @@
+.LogoSirtec{
+    border: 1px solid  black;
+    width: 200px;
+    height: 65px;
+    float: left;
+    background-color: white;
+}
+.DescLogo1{
+    height: 32.5px;
+    border: 1px solid black;
+    margin: 0;
+    font-size: large;
+    font-weight: bold;
+}
+.DescLogo2{
+    height: 32.5px;
+    border: 1px solid black;
+    font-size: large;
+    font-weight: bold;
+}
+.Footer{
+    margin-top: 20px;
+}
+.Paragrafo{
+    font-size:13px;
+    padding-right: 10px;
+}

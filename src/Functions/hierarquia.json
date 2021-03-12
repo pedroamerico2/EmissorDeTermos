@@ -1,0 +1,47 @@
+{
+    "gerente":[
+        {
+            "matricula":"000000",
+            "nome":"silvio",
+            "unidade":[
+                "VTC", "BRU", "JEQ", "GUA"
+            ],
+            "estado":"BA",
+            "coordenadores":[
+                {
+                    "nome":"JOAO",
+                    "matricula":"000000",
+                    "setor":"CCM",
+                    "supervisores":[
+                        {
+                            "nome":"ismael",
+                            "matricula":"000000",
+                            "equipes":[
+                                {
+                                    "numeroEquipe":"064",
+                                    "membros":[
+                                        {
+                                            "c01":"djalma",
+                                            "reg01":"000001",
+                                            "lider": false
+                                        },
+                                        {
+                                            "c02":"Ricardo",
+                                            "reg01":"000022",
+                                            "lider": false
+                                        },
+                                        {
+                                            "c03":"Americo",
+                                            "reg01":"000029",
+                                            "lider": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+.header{
+    width: 81%;
+    float: right;
+}
+@media only screen and (max-width: 1079px){
+    .header{
+        width: 86%;
+    }
+}
