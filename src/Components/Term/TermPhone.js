@@ -24,43 +24,47 @@ export default function TermPhone(props) {
     defModel,
   } = props;
   return (
-    <>
-      <div style={{ width: "768px" }}>
+  <>
+      <div style={{ width: "750px" }}>
         <div className="Header">
           <img className="LogoSirtec" src={LogoSirtec} />
           <p className="text-center DescLogo1">Gestão de Pessoas</p>
           <p className="text-center DescLogo2">
             Termo de Responsabilidade Para Uso de Aparelho Celular
           </p>
-          <p className="text-center">
+          <p   className="Paragrafo text-justify">
             Através da assinatura deste documento, declaro para os devidos fins
             que recebi o equipamento descrito abaixo, em perfeita condição de
             uso e de estado de conservação, e me comprometo a seguir as normas
             descritas abaixo, a partir da desta data.
           </p>
           <hr />
-          <Table striped bordered hover size="sm" className=" text-center">
+          <Table responsive striped bordered hover size="sm" className=" text-center" >
             <thead>
               <tr>
-                <th width="10%">Marca</th>
-                <th width="10%">Modelo</th>
-                <th width="17%">Numero Serial</th>
-                <th width="10%">Placa de Patrimonio</th>
-                <th width="17%">IMEI1</th>
-                <th width="17%">IMEI2</th>
-                <th width="4%"> DDD</th>
-                <th width="15%">Numero de telefone</th>
+                <th width="30%">Marca</th>
+                <th width="15%">Modelo</th>
+                <th width="15%">Numero Serial</th>
+                <th width="40%">Placa de Patrimonio</th>
+                </tr>
+                <tr>
+              <td width="30%">{getMark}</td>
+              <td width="15%">{defModel}</td>
+              <td width="15%">{getSn}</td>
+              <td width="40%">{getPatrim}</td>
+              </tr>
+              <tr>
+                <th width="30%">IMEI1</th>
+                <th width="30%">IMEI2</th>
+                <th width="5%"> DDD</th>
+                <th width="35%">Numero de telefone</th>
               </tr>
             </thead>
-            <tr>
-              <td width="10%">{getMark}</td>
-              <td width="10%">{defModel}</td>
-              <td width="17%">{getSn}</td>
-              <td width="10%">{getPatrim}</td>
-              <td width="17%">{defImei1}</td>
-              <td width="17%">{defImei2}</td>
-              <td width="4%">{defDDD}</td>
-              <td width="15%">{defNumber}</td>
+              <tr>
+              <td width="30%">{defImei1}</td>
+              <td width="30%">{defImei2}</td>
+              <td width="5%">{defDDD}</td>
+              <td width="35%">{defNumber}</td>
             </tr>
             <tbody></tbody>
           </Table>
