@@ -1,2 +1,2 @@
 # sirtecTermos
-sistema de termos para sirtec
+sistema de termos
